@@ -200,7 +200,7 @@ export default function CivicPage() {
                 <EmphasizedText text="I want to help close that gap by building organizations, bringing people together, communicating ideas, and making institutions more responsive to the people they affect." emphasis={["close that gap"]} />
               </p>
               <p className="border-l-2 border-[#E05A60] pl-5 font-display text-[clamp(1.8rem,3vw,2.8rem)] leading-[1.05] text-white">
-                <EmphasizedText text="You don't have to be great to make a difference. You just need to show up." emphasis={["make a difference", "show up"]} />
+                You don't have to be great to make a difference. You just need to show up.
               </p>
             </div>
           </div>
