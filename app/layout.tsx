@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Bebas_Neue, Montserrat } from "next/font/google";
 import "./globals.css";
+import DiscoveryTracker from "@/components/DiscoveryTracker";
 
 const montserrat = Montserrat({
   variable: "--font-montserrat",
@@ -31,6 +32,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${montserrat.variable} ${bebasNeue.variable}`}>
         {children}
+        <DiscoveryTracker />
       </body>
     </html>
   );
