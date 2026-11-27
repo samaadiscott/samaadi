@@ -13,14 +13,44 @@ const mainEssay = [
 
 const prideEssay = <>Plato’s argument suggests that when people believe they can act unjustly without consequence, they will. Perhaps the Unconscious’s constant judgment helps restrain that impulse. The reason pride is considered the worst sin <em>is</em> that it can lead you to believe your Ego or Soul is greater than God. It can also convince you that you are above the judgment of the Unconscious. Once that happens, you may feel free to act unjustly. The more often you act unjustly, the more vulnerable your Soul, and eventually your Ego, may become to obsession with those actions. Beyond those inner consequences, living in society requires us to act justly.</>;
 const soulEssay = `I’ve been noticing that the desires, actions, and thoughts of your Ego (the conscious self) may take longer to become embedded in your Soul (the subconscious self). But when they do, they can settle deeply, shaping the part of you the world cannot directly see, even if it eventually sees the effects.`;
-const racismEssay = `Racism is not always experienced by the person practicing it as hatred of another race. Sometimes it is framed as love or loyalty toward one’s own. That framing can make racism harder to recognize: harmful treatment gets excused as protection, pride, or solidarity. But when loyalty to one’s group becomes indifference to the harm it causes, it can justify exclusion, concentrate power, and protect the systems built on that harm. Racism must be confronted not only in open hostility, but also in the supposedly positive language used to excuse it. Once those systems gain power, they work to preserve and expand that power.`;
+const racismEssay = `Modern racism isn’t about hate of another race; it’s about a love of your own. Racism is one love language, but it’s the most destructive, leading to hateful fears, power-concentrations, and systems, and it’s one we need to root out of society. This language of a love for your own race leads to indifference toward its hateful machinations. And when these hateful machinations lead to more power, they’ll seize it.`;
 const notes = [
   "I have unrecognized greatness within me, so I'll give it to the world.",
   "I don't want thinking to be my responsibility; I want it to be my freedom.",
   "Winning through conquest is less admirable than winning without it. We should be so formidable that we can deter enemies without killing. Killing is a degree of losing.",
   "The most interesting thing to me is the science of building a better world.",
   "In worldly matters, others may be loyal to an ideology. My loyalty is to effectiveness.",
+  "It is a blessing to dream.",
 ];
+
+function DiceMarker({ value }: { value: number }) {
+  const faces: number[] = [];
+  let remaining = value;
+  while (remaining > 6) {
+    faces.push(6);
+    remaining -= 6;
+  }
+  if (remaining > 0) faces.push(remaining);
+  const pipLayouts: Record<number, number[]> = {
+    1: [4],
+    2: [0, 8],
+    3: [0, 4, 8],
+    4: [0, 2, 6, 8],
+    5: [0, 2, 4, 6, 8],
+    6: [0, 3, 6, 2, 5, 8],
+  };
+  return (
+    <span className="flex shrink-0 items-center gap-1" aria-label={`Snippet ${value}`}>
+      {faces.map((face, dieIndex) => (
+        <span key={dieIndex} aria-hidden="true" className="grid h-7 w-7 grid-cols-3 grid-rows-3 gap-0.5 rounded-[5px] bg-[#171717] p-1">
+          {Array.from({ length: 9 }, (_, cell) => (
+            <span key={cell} className={`rounded-full ${pipLayouts[face].includes(cell) ? "bg-[#F5F1EA]" : "bg-transparent"}`} />
+          ))}
+        </span>
+      ))}
+    </span>
+  );
+}
 
 export default function IdeasPage() {
   return (
@@ -83,7 +113,7 @@ export default function IdeasPage() {
           <div className="mx-auto grid max-w-[1440px] gap-8 md:grid-cols-[0.35fr_1fr]">
             <aside><p className="font-sans text-xs font-bold uppercase tracking-[0.16em] text-[#164E63]">03 / Society</p></aside>
             <article className="max-w-3xl">
-              <h2 className="font-display text-[clamp(2.8rem,6vw,5.5rem)] leading-[0.9]">WHEN BELONGING<br />BECOMES A JUSTIFICATION.</h2>
+              <h2 className="font-display text-[clamp(2.8rem,6vw,5.5rem)] leading-[0.9]">ON WHEN BELONGING...</h2>
               <p className="mt-7 font-sans text-base leading-[1.9] text-black/75">{racismEssay}</p>
             </article>
           </div>
@@ -92,7 +122,7 @@ export default function IdeasPage() {
         <section className="mx-auto max-w-[1440px] px-[6vw] py-[10vh]">
           <div className="mb-12 flex flex-wrap items-end justify-between gap-5"><div><p className="mb-4 font-sans text-xs font-bold uppercase tracking-[0.16em] text-[#CF1C25]">04 / Fragments</p><h2 className="font-display text-[clamp(3rem,6vw,5.5rem)] leading-[0.9]">THOUGHTS IN PASSING.</h2></div><p className="max-w-sm font-sans text-sm leading-relaxed text-black/65">Not every idea arrives as a fully formed essay. Some are just thoughts I wanted to keep before they wandered off.</p></div>
           <div className="grid gap-0 border-t border-black/20 md:grid-cols-2">
-            {notes.map((note, index) => <blockquote key={index} className="border-b border-black/20 py-8 md:px-8 md:first:pl-0 md:nth-[2]:border-l md:nth-[2]:border-l-black/20 md:nth-[2]:pr-0"><span className="mb-5 block font-sans text-xs font-bold text-[#CF1C25]">0{index + 1}</span><p className="max-w-xl font-display text-[clamp(1.7rem,3vw,2.7rem)] leading-[1.12]">“{note}”</p></blockquote>)}
+            {notes.map((note, index) => <blockquote key={index} className="flex items-start gap-5 border-b border-black/20 py-8 md:px-8 md:first:pl-0 md:nth-[2]:border-l md:nth-[2]:border-l-black/20 md:nth-[2]:pr-0"><DiceMarker value={index + 1} /><p className="max-w-xl font-display text-[clamp(1.7rem,3vw,2.7rem)] leading-[1.12]">“{note}”</p></blockquote>)}
           </div>
         </section>
 
