@@ -407,7 +407,11 @@ export default function CivicPage() {
         <section className="relative overflow-hidden bg-[#171717] px-[6vw] py-[8vw] text-[#F5F1EA]">
           <div
             aria-hidden="true"
-            className="pointer-events-none absolute right-0 top-0 h-[min(34vw,440px)] w-[min(34vw,440px)] rounded-full bg-[radial-gradient(circle_at_center,_rgba(207,28,37,0.2),_rgba(207,28,37,0)_70%)]"
+            className="pointer-events-none absolute -right-[7vw] -top-[8vw] h-[min(48vw,620px)] w-[min(48vw,620px)] rounded-full blur-[5vw]"
+            style={{
+              background:
+                "radial-gradient(circle at 28% 32%, rgba(255,0,51,0.22), transparent 34%), radial-gradient(circle at 72% 30%, rgba(37,244,238,0.18), transparent 36%), radial-gradient(circle at 58% 76%, rgba(225,48,108,0.22), transparent 38%)",
+            }}
           />
           <div className="relative mx-auto grid max-w-[1440px] gap-12 md:grid-cols-[1fr_0.8fr] md:items-center md:gap-20">
             <div>
@@ -422,25 +426,30 @@ export default function CivicPage() {
             </div>
 
             <div className="flex flex-col items-start">
-              <div className="mb-8 flex items-center gap-4">
-                <div className="flex h-16 w-20 items-center justify-center rounded-xl bg-[#CF1C25]">
-                  <svg
-                    viewBox="0 0 64 48"
-                    className="h-9 w-12"
-                    aria-hidden="true"
-                  >
-                    <path
-                      d="M58 8.2a7.5 7.5 0 0 0-5.3-5.3C48 1.6 32 1.6 32 1.6s-16 0-20.7 1.3A7.5 7.5 0 0 0 6 8.2C4.7 12.9 4.7 24 4.7 24s0 11.1 1.3 15.8a7.5 7.5 0 0 0 5.3 5.3C16 46.4 32 46.4 32 46.4s16 0 20.7-1.3a7.5 7.5 0 0 0 5.3-5.3C59.3 35.1 59.3 24 59.3 24s0-11.1-1.3-15.8Z"
-                      fill="white"
-                    />
-                    <path d="m26 33.5 14-9.5-14-9.5v19Z" fill="#CF1C25" />
-                  </svg>
-                </div>
-                <div>
-                  <p className="font-sans text-xs font-bold uppercase tracking-[0.12em] text-white/45">
-                    Video and social media
-                  </p>
-                  <p className="mt-1 font-display text-2xl">Samaadi Scott</p>
+              <div className="mb-8">
+                <p className="mb-4 font-sans text-xs font-bold uppercase tracking-[0.12em] text-white/45">
+                  Video and social media
+                </p>
+                <div className="flex flex-wrap items-center gap-3">
+                  <div className="flex h-[4.5rem] w-[4.5rem] items-center justify-center rounded-2xl border border-white/10 bg-[#FF0033]/15 text-[#FF0033]" aria-label="YouTube">
+                    <svg viewBox="0 0 64 48" className="h-9 w-12" aria-hidden="true">
+                      <path d="M58 8.2a7.5 7.5 0 0 0-5.3-5.3C48 1.6 32 1.6 32 1.6s-16 0-20.7 1.3A7.5 7.5 0 0 0 6 8.2C4.7 12.9 4.7 24 4.7 24s0 11.1 1.3 15.8a7.5 7.5 0 0 0 5.3 5.3C16 46.4 32 46.4 32 46.4s16 0 20.7-1.3a7.5 7.5 0 0 0 5.3-5.3C59.3 35.1 59.3 24 59.3 24s0-11.1-1.3-15.8Z" fill="currentColor" />
+                      <path d="m26 33.5 14-9.5-14-9.5v19Z" fill="#171717" />
+                    </svg>
+                  </div>
+                  <div className="flex h-[4.5rem] w-[4.5rem] items-center justify-center rounded-2xl border border-white/10 bg-[#25F4EE]/10 text-[#25F4EE]" aria-label="TikTok">
+                    <svg viewBox="0 0 48 48" className="h-9 w-9" aria-hidden="true">
+                      <path d="M28 5h7c.5 4.3 2.8 7.1 7 8v7c-3.2-.1-6.1-1.1-8.8-2.9v13.1c0 8.1-5.2 13-12.4 13C13.9 43.2 9 38.5 9 32c0-7 5.5-12.2 13.1-12.2 1 0 2 .1 2.9.4v7.3a8 8 0 0 0-2.9-.6c-3.2 0-5.5 2-5.5 5s2.2 5 5.2 5c3.5 0 5.2-2.1 5.2-6.1V5Z" fill="currentColor" />
+                    </svg>
+                  </div>
+                  <div className="flex h-[4.5rem] w-[4.5rem] items-center justify-center rounded-2xl border border-white/10 bg-[#E1306C]/15 text-[#E1306C]" aria-label="Instagram">
+                    <svg viewBox="0 0 48 48" className="h-9 w-9" fill="none" stroke="currentColor" strokeWidth="3.2" aria-hidden="true">
+                      <rect x="6" y="6" width="36" height="36" rx="10" />
+                      <circle cx="24" cy="24" r="8.5" />
+                      <circle cx="35" cy="13" r="2" fill="currentColor" stroke="none" />
+                    </svg>
+                  </div>
+                  <p className="ml-1 font-display text-2xl">Samaadi Scott</p>
                 </div>
               </div>
 
