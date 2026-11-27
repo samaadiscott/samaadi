@@ -122,9 +122,9 @@ export default function SiteNav({ activePage }: SiteNavProps) {
           <a
             href="/search"
             aria-label="Search the site"
-            className={`inline-flex items-center gap-2 py-[1.2vh] text-white transition-opacity hover:opacity-60 ${activePage === "search" ? "font-bold" : "font-medium"}`}
+            className={`inline-flex h-10 w-10 items-center justify-center rounded-full text-white transition-colors hover:bg-white/10 hover:text-white ${activePage === "search" ? "bg-white/10" : ""}`}
           >
-            <span aria-hidden="true">⌕</span><span>Search</span>
+            <svg aria-hidden="true" viewBox="0 0 24 24" className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round"><circle cx="10.8" cy="10.8" r="6.8" /><path d="m16 16 5 5" /></svg>
           </a>
         </div>
       </nav>
