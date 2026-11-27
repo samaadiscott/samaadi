@@ -223,14 +223,6 @@ export default function ProjectsPage() {
                   In development
                 </div>
 
-                <p className="mt-7 max-w-xl font-sans text-sm leading-7 text-[#6B6B6B]">
-                  I’m building Rally as an{" "}
-                  <strong className="font-semibold text-[#171717]">
-                    independent project
-                  </strong>
-                  , responsible for its product direction and development.
-                  It isn’t built or owned by New Village Academy.
-                </p>
               </div>
 
               {/* PRODUCT PREVIEW EXPANDER */}
