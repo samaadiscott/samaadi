@@ -13,11 +13,11 @@ const mainEssay = [
 
 const prideEssay = <>Plato’s argument suggests that when people believe they can act unjustly without consequence, they will. Perhaps the Unconscious’s constant judgment helps restrain that impulse. The reason pride is considered the worst sin <em>IS</em> that it can lead you to believe your Ego or Soul is greater than God. It can also convince you that you are above the judgment of the Unconscious. Once that happens, you may feel free to act unjustly. The more often you act unjustly, the more vulnerable your Soul, and eventually your Ego, may become to obsession with those actions. Beyond those inner consequences, living in society requires us to act justly.</>;
 const soulEssay = `I’ve been noticing that the desires, actions, and thoughts of your Ego (the conscious self) may take longer to become embedded in your Soul (the subconscious self). But when they do, they can settle deeply, shaping the part of you the world cannot directly see, even if it eventually sees the effects.`;
-const racismEssay = `Racism is not always experienced by the person practicing it as hatred of another race. Sometimes it is framed as love or loyalty toward one’s own. That framing can make racism harder to recognize: harmful treatment gets excused as protection, pride, or solidarity. But when loyalty to one’s group becomes indifference to the harm it causes, it can justify exclusion, concentrate power, and protect the systems built on that harm. Racism must be confronted not only in open hostility, but also in the supposedly positive language used to excuse it. Once those systems gain power, they work to preserve and expand it.`;
+const racismEssay = `Racism is not always experienced by the person practicing it as hatred of another race. Sometimes it is framed as love or loyalty toward one’s own. That framing can make racism harder to recognize: harmful treatment gets excused as protection, pride, or solidarity. But when loyalty to one’s group becomes indifference to the harm it causes, it can justify exclusion, concentrate power, and protect the systems built on that harm. Racism must be confronted not only in open hostility, but also in the supposedly positive language used to excuse it. Once those systems gain power, they work to preserve and expand that power.`;
 const notes = [
-  "I have unrecognized greatness within me, so i'll give it to the world.",
-  "I don't want it to be my responsibility to think, i want it to be my freedom to think.",
-  "Winning through conquer is less admirable than winning without. we must be so formidable we could deter enemies without killing. killing is a degree of losing.",
+  "I have unrecognized greatness within me, so I'll give it to the world.",
+  "I don't want thinking to be my responsibility; I want it to be my freedom.",
+  "Winning through conquest is less admirable than winning without it. We should be so formidable that we can deter enemies without killing. Killing is a degree of losing.",
   "The most interesting thing to me is the science of building a better world.",
   "In worldly matters, others may be loyal to an ideology. My loyalty is to effectiveness.",
 ];
