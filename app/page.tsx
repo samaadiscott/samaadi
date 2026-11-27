@@ -75,7 +75,17 @@ export default function Home() {
           </div>
         </section>
 
-        {/* THE QUESTION */}
+        {/* THE PROMISE */}
+        <section aria-label="The promise" className="bg-[#DCE5E7] px-[6vw] py-[5.5vh]">
+          <div className="mx-auto grid max-w-[1440px] gap-5 md:grid-cols-[0.7fr_1.3fr] md:items-center">
+            <p className="font-sans text-xs font-extrabold uppercase tracking-[0.18em] text-[#164E63]">The promise</p>
+            <p className="font-display text-[clamp(2rem,4.2vw,4rem)] leading-[0.98] text-[#171717]">
+              Leave with a clearer perspective, a better question, or an idea worth acting on.
+            </p>
+          </div>
+        </section>
+
+        {/* THE QUESTION */
         <section id="question" className="scroll-mt-8 px-[4.7vw] py-[7.64vw]">
           <div className="mx-auto grid max-w-[1440px] gap-[3.82vw] md:grid-cols-[0.9fr_1.1fr]">
             <div>
@@ -108,7 +118,7 @@ export default function Home() {
         <section id="about" className="bg-[#171717] px-[4.7vw] py-[7.64vw] text-white">
           <div className="mx-auto max-w-[1440px]">
             <div className="grid gap-[5vw] md:grid-cols-[1fr_1fr]">
-              <div>
+              <div className="md:order-2">
                 <h2 className="max-w-[700px] font-display text-[clamp(4rem,9.44vw,9rem)] leading-[0.82]">
                   I’m figuring it out
                   <br />
@@ -119,7 +129,7 @@ export default function Home() {
                 </p>
               </div>
 
-              <div className="flex flex-col justify-center gap-6 font-sans text-base leading-8 text-white/75 md:text-lg">
+              <div className="flex flex-col justify-center gap-6 font-sans md:order-1 text-base leading-8 text-white/75 md:text-lg">
                 <p>
                   I’m interested in how <strong>society works</strong>, what <strong>people can build</strong>, and how we can make our systems work better and work for us.
                 </p>
@@ -148,10 +158,39 @@ export default function Home() {
           </div>
         </section>
 
-        {/* THE WORK */}
+        {/* THE PLAN */}
+        <section id="plan" className="bg-[#DCE5E7] px-[4.7vw] py-[7.64vw]">
+          <div className="mx-auto grid max-w-[1440px] gap-[4vw] md:grid-cols-[1.1fr_0.9fr] md:items-center">
+            <div className="space-y-0">
+              {[
+                { number: "01", title: "Explore", text: "Start with the systems shaping everyday life: school, technology, markets, and government.", href: "/civic" },
+                { number: "02", title: "Question", text: "Follow the questions, test assumptions, and examine who holds power and who benefits.", href: "/ideas" },
+                { number: "03", title: "Build", text: "Turn what you learn into projects, participation, and practical change.", href: "/projects" },
+              ].map((step) => (
+                <a key={step.number} href={step.href} className="group grid grid-cols-[3.5rem_1fr] gap-4 border-t border-black/15 py-6 transition-opacity hover:opacity-65">
+                  <span className="pt-2 font-sans text-xs font-extrabold text-[#CF1C25]">{step.number}</span>
+                  <span>
+                    <span className="block font-display text-4xl leading-none">{step.title}</span>
+                    <span className="mt-2 block max-w-xl font-sans text-sm leading-[1.7] text-black/65">{step.text}</span>
+                  </span>
+                  <span aria-hidden="true" className="col-start-2 font-sans text-sm font-bold text-[#CF1C25]">Explore this path →</span>
+                </a>
+              ))}
+            </div>
+            <div>
+              <p className="mb-4 font-sans text-xs font-bold uppercase tracking-[0.16em] text-[#164E63]">A simple way through</p>
+              <h2 className="font-display text-[clamp(4rem,9vw,8rem)] leading-[0.82]">EXPLORE.<br />QUESTION.<br />BUILD.</h2>
+              <p className="mt-6 max-w-lg font-sans text-base leading-[1.8] text-black/70">
+                You bring the curiosity. This site gives you a path: understand the systems around you, challenge the ideas behind them, and see what people can build to make them better.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        {/* THE WORK */
         <section id="work" className="scroll-mt-8 px-[4.7vw] py-[7.64vw]">
           <div className="mx-auto max-w-[1440px]">
-            <div className="flex flex-col gap-[3.82vw] md:flex-row">
+            <div className="flex flex-col gap-[3.82vw] md:flex-row-reverse">
               <div className="w-full md:w-[38.2%]">
                 <h2 className="font-display text-[clamp(4rem,9.44vw,9rem)] leading-[0.82]">
                   What I’m
@@ -185,7 +224,35 @@ export default function Home() {
           </div>
         </section>
 
-        {/* THE OPEN ENDING */}
+        {/* FAQ */}
+        <section id="faq" className="px-[4.7vw] py-[7.64vw]">
+          <div className="mx-auto grid max-w-[1440px] gap-[4vw] md:grid-cols-[0.8fr_1.2fr]">
+            <div>
+              <p className="mb-4 font-sans text-xs font-bold uppercase tracking-[0.16em] text-[#CF1C25]">A few answers</p>
+              <h2 className="font-display text-[clamp(4rem,9.44vw,8rem)] leading-[0.82]">GOOD<br />QUESTIONS.</h2>
+              <p className="mt-6 max-w-sm font-sans text-base leading-[1.7] text-black/60">A little context before you explore.</p>
+            </div>
+            <div className="border-t border-black/20">
+              {[
+                { q: "What is this site?", a: "A home for my civic work, projects, and writing. It connects what I’m learning about society with the things I’m trying to build and improve." },
+                { q: "Who is this for?", a: "Anyone curious about how society works, why its systems operate the way they do, and how people can help make them better. You do not need a title or expertise to start." },
+                { q: "What does “civic entrepreneur” mean?", a: "Someone who approaches public problems with the mindset of a builder: asking what is not working, bringing people and ideas together, and testing practical ways forward." },
+                { q: "What is Countervailance?", a: "An accountability framework built around one principle: power should never lack a counterweight. It explores how institutions and people with power can be checked." },
+                { q: "Are these ideas final positions?", a: "Not always. Some are developed arguments; others are questions, early thoughts, or works in progress. Disagreement and thoughtful criticism are welcome." },
+              ].map((item, index) => (
+                <details key={item.q} className="group border-b border-black/20 py-5">
+                  <summary className="flex cursor-pointer list-none items-center justify-between gap-5 font-sans text-base font-bold">
+                    <span>{item.q}</span>
+                    <span aria-hidden="true" className="font-display text-2xl text-[#CF1C25] transition-transform group-open:rotate-45">+</span>
+                  </summary>
+                  <p className="mt-4 max-w-2xl pr-8 font-sans text-sm leading-[1.8] text-black/65">{item.a}</p>
+                </details>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* THE OPEN ENDING */
         <section className="bg-[#171717] px-[4.7vw] py-[clamp(5rem,10vw,9rem)] text-white">
           <div className="mx-auto max-w-[1440px]">
             <div className="w-full">
