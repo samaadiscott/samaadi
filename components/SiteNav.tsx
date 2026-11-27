@@ -1,13 +1,13 @@
 
 type SiteNavProps = {
-  activePage: "home" | "projects" | "civic" | "ideas" | "countervailance";
+  activePage: "home" | "projects" | "civic" | "ideas" | "countervailance" | "search";
 };
 
 const linkStyle =
   "flex items-center justify-between gap-6 whitespace-nowrap px-4 py-3 text-sm text-white transition-colors hover:bg-white/10 hover:text-white";
 
 export default function SiteNav({ activePage }: SiteNavProps) {
-  const workIsActive = activePage !== "home";
+  const workIsActive = activePage !== "home" && activePage !== "search";
   const ideasIsActive =
     activePage === "ideas" || activePage === "countervailance";
 
@@ -122,7 +122,7 @@ export default function SiteNav({ activePage }: SiteNavProps) {
           <a
             href="/search"
             aria-label="Search the site"
-            className="inline-flex items-center gap-2 py-[1.2vh] font-semibold text-white transition-opacity hover:opacity-60"
+            className={`inline-flex items-center gap-2 py-[1.2vh] text-white transition-opacity hover:opacity-60 ${activePage === "search" ? "font-bold" : "font-medium"}`}
           >
             <span aria-hidden="true">⌕</span><span>Search</span>
           </a>
