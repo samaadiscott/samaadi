@@ -76,12 +76,25 @@ export default function Home() {
         </section>
 
         {/* THE PROMISE */}
-        <section aria-label="The promise" className="bg-[#DCE5E7] px-[6vw] py-[5.5vh]">
-          <div className="mx-auto grid max-w-[1440px] gap-5 md:grid-cols-[0.7fr_1.3fr] md:items-center">
-            <p className="font-sans text-xs font-extrabold uppercase tracking-[0.18em] text-[#164E63]">My promise to you</p>
-            <p className="font-display text-[clamp(2rem,4.2vw,4rem)] leading-[0.98] text-[#171717]">
-              I help curious people understand the systems shaping their lives, question how those systems work, and discover what they can build to make them better.
-            </p>
+        <section aria-label="The promise" className="bg-[#DCE5E7] px-[6vw] py-[8vh]">
+          <div className="mx-auto max-w-[1440px]">
+            <div className="mb-8 flex flex-wrap items-end justify-between gap-4">
+              <div>
+                <p className="mb-3 font-sans text-xs font-extrabold uppercase tracking-[0.18em] text-[#164E63]">What you can expect</p>
+                <h2 className="font-display text-[clamp(3rem,6vw,5.5rem)] leading-[0.86] text-[#171717]">THE SAMAADI PROMISE.</h2>
+              </div>
+              <p className="max-w-md font-sans text-base leading-[1.7] text-black/65">Leave with a clearer view of how society works, why it works that way, and where you can help make a difference.</p>
+            </div>
+            <div className="grid gap-5 border-t border-black/15 pt-7 md:grid-cols-2 md:gap-10">
+              <div className="flex items-start gap-5">
+                <span aria-hidden="true" className="font-display text-4xl text-[#CF1C25]">◎</span>
+                <p className="max-w-lg font-display text-[clamp(1.8rem,3.2vw,3rem)] leading-[1.02] text-[#171717]">Understand the systems shaping everyday life.</p>
+              </div>
+              <div className="flex items-start gap-5">
+                <span aria-hidden="true" className="font-display text-4xl text-[#CF1C25]">↗</span>
+                <p className="max-w-lg font-display text-[clamp(1.8rem,3.2vw,3rem)] leading-[1.02] text-[#171717]">Find ideas worth questioning, and ways to put them into action.</p>
+              </div>
+            </div>
           </div>
         </section>
 
@@ -158,52 +171,27 @@ export default function Home() {
           </div>
         </section>
 
-        {/* THE PLAN */}
-        <section id="plan" className="bg-[#DCE5E7] px-[4.7vw] py-[7.64vw]">
-          <div className="mx-auto grid max-w-[1440px] gap-[4vw] md:grid-cols-[1.1fr_0.9fr] md:items-center">
-            <div className="space-y-0">
-              {[
-                { number: "01", title: "Explore", text: "Start with the systems shaping everyday life: school, technology, markets, and government.", href: "/civic" },
-                { number: "02", title: "Question", text: "Follow the questions, test assumptions, and examine who holds power and who benefits.", href: "/ideas" },
-                { number: "03", title: "Build", text: "Turn what you learn into projects, participation, and practical change.", href: "/projects" },
-              ].map((step) => (
-                <a key={step.number} href={step.href} className="group grid grid-cols-[3.5rem_1fr] gap-4 border-t border-black/15 py-6 transition-opacity hover:opacity-65">
-                  <span className="pt-2 font-sans text-xs font-extrabold text-[#CF1C25]">{step.number}</span>
-                  <span>
-                    <span className="block font-display text-4xl leading-none">{step.title}</span>
-                    <span className="mt-2 block max-w-xl font-sans text-sm leading-[1.7] text-black/65">{step.text}</span>
-                  </span>
-                  <span aria-hidden="true" className="col-start-2 font-sans text-sm font-bold text-[#CF1C25]">Explore this path →</span>
-                </a>
-              ))}
-            </div>
-            <div>
-              <p className="mb-4 font-sans text-xs font-bold uppercase tracking-[0.16em] text-[#164E63]">A simple way through</p>
-              <h2 className="font-display text-[clamp(4rem,9vw,8rem)] leading-[0.82]">EXPLORE.<br />QUESTION.<br />BUILD.</h2>
-              <p className="mt-6 max-w-lg font-sans text-base leading-[1.8] text-black/70">
-                You bring the curiosity. This site gives you a path: understand the systems around you, challenge the ideas behind them, and see what people can build to make them better.
-              </p>
-            </div>
-          </div>
-        </section>
-
-        {/* THE WORK */}
-        <section id="work" className="scroll-mt-8 px-[4.7vw] py-[7.64vw]">
+        {/* THE PLAN / WORK */}
+        <section id="work" className="scroll-mt-8 bg-[#DCE5E7] px-[4.7vw] py-[7.64vw]">
           <div className="mx-auto max-w-[1440px]">
             <div className="flex flex-col gap-[3.82vw] md:flex-row-reverse">
               <div className="w-full md:w-[38.2%]">
+                <p className="mb-4 font-sans text-xs font-bold uppercase tracking-[0.16em] text-[#164E63]">A path from curiosity to action</p>
                 <h2 className="font-display text-[clamp(4rem,9.44vw,9rem)] leading-[0.82]">
-                  What I’m
+                  The
                   <br />
-                  doing
+                  plan
                 </h2>
-                <p className="mt-[1.8vw] max-w-[25rem] font-sans text-base leading-[1.65] text-black/60">
-                  An organized collection of things I care about, work on, and occasionally hyper-focus on!
+                <p className="mt-[1.8vw] max-w-[25rem] font-sans text-base leading-[1.65] text-black/65">
+                  Three ways to move from understanding the world to doing something about it.
                 </p>
               </div>
-
               <div className="w-full md:w-[61.8%]">
-                {work.map((item, index) => (
+                {[
+                  { title: "Explore", text: "Understand the systems shaping everyday life, from schools and technology to markets and government.", href: "/civic" },
+                  { title: "Question", text: "Examine the ideas behind those systems, test assumptions, and ask who holds power and who benefits.", href: "/ideas" },
+                  { title: "Build", text: "Turn what you learn into initiatives, projects, and practical ways to make things better.", href: "/projects" },
+                ].map((item, index) => (
                   <a
                     key={item.title}
                     href={item.href}
@@ -213,7 +201,7 @@ export default function Home() {
                       <span className="pt-2 font-sans text-xs font-bold tabular-nums text-[#CF1C25]">0{index + 1}</span>
                       <div className="min-w-0">
                         <h3 className="mt-2 font-display text-[clamp(2.5rem,5vw,4.8rem)] leading-[0.95]">{item.title}</h3>
-                        <p className="mt-4 max-w-[38rem] font-sans text-base leading-[1.7] text-black/60">{item.text}</p>
+                        <p className="mt-4 max-w-[38rem] font-sans text-base leading-[1.7] text-black/65">{item.text}</p>
                       </div>
                     </div>
                     <span aria-hidden="true" className="mt-2 shrink-0 font-sans text-xl transition-transform duration-200 group-hover:translate-x-1">→</span>
@@ -235,8 +223,8 @@ export default function Home() {
             <div className="border-t border-black/20">
               {[
                 { q: "What is this site?", a: "A home for my civic work, projects, and writing. It connects what I’m learning about society with the things I’m trying to build and improve." },
-                { q: "Who is this for?", a: "Anyone curious about how society works, why its systems operate the way they do, and how people can help make them better. You do not need a title or expertise to start." },
-                { q: "What does “civic entrepreneur” mean?", a: "Someone who approaches public problems with the mindset of a builder: asking what is not working, bringing people and ideas together, and testing practical ways forward." },
+                { q: "Who is this for?", a: "This is for people who want to look beneath the surface of how society works: to understand why its systems operate as they do, question what is not working, and take part in improving them. You do not need a title or expertise, just genuine curiosity and a willingness to engage." },
+                { q: "What does “civic entrepreneur” mean?", a: "Someone who approaches public problems like a builder: identifying what is not working, bringing people and ideas together, testing practical solutions, and putting an initiative into motion to address the problem." },
                 { q: "What is Countervailance?", a: "An accountability framework built around one principle: power should never lack a counterweight. It explores how institutions and people with power can be checked." },
                 { q: "Are these ideas final positions?", a: "Not always. Some are developed arguments; others are questions, early thoughts, or works in progress. Disagreement and thoughtful criticism are welcome." },
               ].map((item, index) => (
