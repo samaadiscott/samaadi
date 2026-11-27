@@ -79,7 +79,7 @@ const areas = [
     title: "Okay, But What Happens When Things Go Wrong?",
     intro: "Rights matter most when protecting them is inconvenient.",
     description: <>
-      Shift corrections toward rehabilitation, strengthen due process, protect journalists and whistleblowers, end for-profit detention, and prohibit law enforcement from relying on automated predictions alone to justify action. Replace ICE in its current form with an <strong>accountable successor agency</strong>, require visible identification and body cameras during enforcement, protect sensitive locations, and strengthen safeguards against racial profiling, unjustified detention, and mass surveillance.
+      Shift corrections toward rehabilitation, strengthen due process, protect journalists and whistleblowers, end for-profit detention, and prohibit law enforcement from relying on automated predictions alone to justify action. Replace ICE in its current form with an <strong>accountable successor agency</strong> and enforceable civil-rights safeguards. Establish a carefully bounded right to self-defense, including proportionate non-lethal defensive force in public, strict limits on deadly force, voluntary state-funded de-escalation and self-defense training, and <strong>independent review</strong> of defensive-force incidents before immunity or prosecution decisions.
     </>,
   },
   {
