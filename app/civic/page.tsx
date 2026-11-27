@@ -63,7 +63,7 @@ const experiences = [
     detailEmphasis: ["more than 300 copies", "branding, outreach, and operations"],
     eyebrow: "Youth literacy initiative · 2022–2025",
     description:
-      "As Founder & CEO, I built Wonder Kids Books, a youth literacy initiative built around books by kids for kids. I authored and published four books, including a collection.",
+      "I was the Founder & CEO of Wonder Kids Books, a youth literacy initiative built around books by kids for kids. I authored and published four books, including a collection.",
     detail:
       "The books sold more than 300 copies. I also managed branding, outreach, and operations, learning what it takes to build an organization around a clear mission.",
     link: "https://www.wonderhq.space/home",
