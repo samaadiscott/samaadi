@@ -119,6 +119,13 @@ export default function SiteNav({ activePage }: SiteNavProps) {
           >
             About
           </a>
+          <a
+            href="/search"
+            aria-label="Search the site"
+            className="inline-flex items-center gap-2 py-[1.2vh] font-semibold text-white transition-opacity hover:opacity-60"
+          >
+            <span aria-hidden="true">⌕</span><span>Search</span>
+          </a>
         </div>
       </nav>
     </header>
