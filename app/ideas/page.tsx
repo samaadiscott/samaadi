@@ -92,7 +92,7 @@ export default function IdeasPage() {
 
         <section className="mx-auto max-w-[1440px] px-[6vw] py-[10vh]">
           <div className="mb-12 flex flex-wrap items-end justify-between gap-5"><div><p className="mb-4 font-sans text-xs font-bold uppercase tracking-[0.16em] text-[#CF1C25]">04 / Fragments</p><h2 className="font-display text-[clamp(3rem,6vw,5.5rem)] leading-[0.9]">THOUGHTS IN PASSING.</h2></div><p className="max-w-sm font-sans text-sm leading-relaxed text-black/65">Not every idea arrives as a fully formed essay. Some are just thoughts I wanted to keep before they wandered off.</p></div>
-          <div className={`grid gap-5 border-t border-black/20 pt-6 ${notes.length <= 6 ? "grid-cols-3 grid-rows-3" : "grid-cols-1 sm:grid-cols-2 lg:grid-cols-3"}`}>
+          <div className={`grid gap-5 border-t border-black/20 pt-6 ${notes.length === 6 ? "grid-cols-2 grid-rows-3" : notes.length === 4 ? "grid-cols-2 grid-rows-2" : notes.length <= 5 ? "grid-cols-3 grid-rows-3" : "grid-cols-1 sm:grid-cols-2 lg:grid-cols-3"}`}>
             {notes.map((note, index) => {
               const diePositions: Record<number, [number, number][]> = {
                 1: [[2, 2]],
@@ -100,7 +100,7 @@ export default function IdeasPage() {
                 3: [[1, 1], [2, 2], [3, 3]],
                 4: [[1, 1], [3, 1], [1, 3], [3, 3]],
                 5: [[1, 1], [3, 1], [2, 2], [1, 3], [3, 3]],
-                6: [[1, 1], [1, 2], [1, 3], [3, 1], [3, 2], [3, 3]],
+                6: [[1, 1], [1, 2], [1, 3], [2, 1], [2, 2], [2, 3]],
               };
               const position = notes.length <= 6 ? diePositions[notes.length][index] : null;
               return (
