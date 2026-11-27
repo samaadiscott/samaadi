@@ -13,7 +13,7 @@ const mainEssay = [
 
 const prideEssay = <>Plato’s argument suggests that when people believe they can act unjustly without consequence, they will. Perhaps the Unconscious’s constant judgment helps restrain that impulse. The reason pride is considered the worst sin <em>is</em> that it can lead you to believe your Ego or Soul is greater than God. It can also convince you that you are above the judgment of the Unconscious. Once that happens, you may feel free to act unjustly. The more often you act unjustly, the more vulnerable your Soul, and eventually your Ego, may become to obsession with those actions. Beyond those inner consequences, living in society requires us to act justly.</>;
 const soulEssay = `I’ve been noticing that the desires, actions, and thoughts of your Ego (the conscious self) may take longer to become embedded in your Soul (the subconscious self). But when they do, they can settle deeply, shaping the part of you the world cannot directly see, even if it eventually sees the effects.`;
-const racismEssay = `Modern racism isn't about hate of another race, it's about a love of your own. Racism is one love language, but it's the most destructive, leading to hateful fears, power-concentrations, and systems, and it's one we need to root out of society. This language of a love for your own race leads to indifference to its hateful machinations. And when these hateful machinations lead to more power, they'll seize it.`;
+const racismEssay = `Racism isn't always expressed as hatred toward another race; it can also be expressed as a claimed love for one's own. But love of one's group becomes racist when it depends on devaluing, excluding, or excusing harm to others. In that sense, racism can operate as a destructive language of belonging: it turns loyalty into indifference toward the harm done in the group's name, encourages fear, concentrates power, and builds systems that preserve that power. The problem isn't belonging or cultural pride. It's using them to justify domination or unequal treatment. That form of 'love' must be rooted out of society.`;
 const notes = [
   "I have unrecognized greatness within me, so I'll give it to the world.",
   "I don't want thinking to be my responsibility; I want it to be my freedom.",
@@ -22,35 +22,6 @@ const notes = [
   "In worldly matters, others may be loyal to an ideology. My loyalty is to effectiveness.",
   "It is a blessing to dream.",
 ];
-
-function DiceMarker({ value }: { value: number }) {
-  const faces: number[] = [];
-  let remaining = value;
-  while (remaining > 6) {
-    faces.push(6);
-    remaining -= 6;
-  }
-  if (remaining > 0) faces.push(remaining);
-  const pipLayouts: Record<number, number[]> = {
-    1: [4],
-    2: [0, 8],
-    3: [0, 4, 8],
-    4: [0, 2, 6, 8],
-    5: [0, 2, 4, 6, 8],
-    6: [0, 3, 6, 2, 5, 8],
-  };
-  return (
-    <span className="flex shrink-0 items-center gap-1" aria-label={`Snippet ${value}`}>
-      {faces.map((face, dieIndex) => (
-        <span key={dieIndex} aria-hidden="true" className="grid h-7 w-7 grid-cols-3 grid-rows-3 gap-0.5 rounded-[5px] bg-[#171717] p-1">
-          {Array.from({ length: 9 }, (_, cell) => (
-            <span key={cell} className={`rounded-full ${pipLayouts[face].includes(cell) ? "bg-[#F5F1EA]" : "bg-transparent"}`} />
-          ))}
-        </span>
-      ))}
-    </span>
-  );
-}
 
 export default function IdeasPage() {
   return (
@@ -113,7 +84,7 @@ export default function IdeasPage() {
           <div className="mx-auto grid max-w-[1440px] gap-8 md:grid-cols-[0.35fr_1fr]">
             <aside><p className="font-sans text-xs font-bold uppercase tracking-[0.16em] text-[#164E63]">03 / Society</p></aside>
             <article className="max-w-3xl">
-              <h2 className="font-display text-[clamp(2.8rem,6vw,5.5rem)] leading-[0.9]">ON WHEN BELONGING...</h2>
+              <h2 className="font-display text-[clamp(2.8rem,6vw,5.5rem)] leading-[0.9]">ON WHEN BELONGING BECOMES A JUSTIFICATION.</h2>
               <p className="mt-7 font-sans text-base leading-[1.9] text-black/75">{racismEssay}</p>
             </article>
           </div>
@@ -121,8 +92,27 @@ export default function IdeasPage() {
 
         <section className="mx-auto max-w-[1440px] px-[6vw] py-[10vh]">
           <div className="mb-12 flex flex-wrap items-end justify-between gap-5"><div><p className="mb-4 font-sans text-xs font-bold uppercase tracking-[0.16em] text-[#CF1C25]">04 / Fragments</p><h2 className="font-display text-[clamp(3rem,6vw,5.5rem)] leading-[0.9]">THOUGHTS IN PASSING.</h2></div><p className="max-w-sm font-sans text-sm leading-relaxed text-black/65">Not every idea arrives as a fully formed essay. Some are just thoughts I wanted to keep before they wandered off.</p></div>
-          <div className="grid gap-0 border-t border-black/20 md:grid-cols-2">
-            {notes.map((note, index) => <blockquote key={index} className="flex items-start gap-5 border-b border-black/20 py-8 md:px-8 md:first:pl-0 md:nth-[2]:border-l md:nth-[2]:border-l-black/20 md:nth-[2]:pr-0"><DiceMarker value={index + 1} /><p className="max-w-xl font-display text-[clamp(1.7rem,3vw,2.7rem)] leading-[1.12]">“{note}”</p></blockquote>)}
+          <div className={`grid gap-5 border-t border-black/20 pt-6 ${notes.length <= 6 ? "grid-cols-3 grid-rows-3" : "grid-cols-1 sm:grid-cols-2 lg:grid-cols-3"}`}>
+            {notes.map((note, index) => {
+              const diePositions: Record<number, [number, number][]> = {
+                1: [[2, 2]],
+                2: [[1, 1], [3, 3]],
+                3: [[1, 1], [2, 2], [3, 3]],
+                4: [[1, 1], [3, 1], [1, 3], [3, 3]],
+                5: [[1, 1], [3, 1], [2, 2], [1, 3], [3, 3]],
+                6: [[1, 1], [1, 2], [1, 3], [3, 1], [3, 2], [3, 3]],
+              };
+              const position = notes.length <= 6 ? diePositions[notes.length][index] : null;
+              return (
+                <blockquote
+                  key={index}
+                  style={position ? { gridColumn: position[0], gridRow: position[1] } : undefined}
+                  className="flex min-h-32 items-start border-b border-black/20 py-5 md:px-5 md:first:pl-0"
+                >
+                  <p className="max-w-xl font-display text-[clamp(1.35rem,2.2vw,2.1rem)] leading-[1.12]">“{note}”</p>
+                </blockquote>
+              );
+            })}
           </div>
         </section>
 
