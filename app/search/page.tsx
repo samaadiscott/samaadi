@@ -26,7 +26,7 @@ export default async function SearchPage({ searchParams }: SearchPageProps) {
 
   return (
     <>
-      <SiteNav activePage="home" />
+      <SiteNav activePage="search" />
       <main className="min-h-[75vh] bg-[#F5F1EA] px-[6vw] py-[10vh] text-[#171717]">
         <div className="mx-auto max-w-[1000px]">
           <p className="mb-4 font-sans text-xs font-bold uppercase tracking-[0.16em] text-[#CF1C25]">Explore the site</p>
