@@ -78,14 +78,14 @@ export default function Home() {
         {/* THE PROMISE */}
         <section aria-label="The promise" className="bg-[#DCE5E7] px-[6vw] py-[5.5vh]">
           <div className="mx-auto grid max-w-[1440px] gap-5 md:grid-cols-[0.7fr_1.3fr] md:items-center">
-            <p className="font-sans text-xs font-extrabold uppercase tracking-[0.18em] text-[#164E63]">The promise</p>
+            <p className="font-sans text-xs font-extrabold uppercase tracking-[0.18em] text-[#164E63]">My promise to you</p>
             <p className="font-display text-[clamp(2rem,4.2vw,4rem)] leading-[0.98] text-[#171717]">
-              Leave with a clearer perspective, a better question, or an idea worth acting on.
+              I help curious people understand the systems shaping their lives, question how those systems work, and discover what they can build to make them better.
             </p>
           </div>
         </section>
 
-        {/* THE QUESTION */
+        {/* THE QUESTION */}
         <section id="question" className="scroll-mt-8 px-[4.7vw] py-[7.64vw]">
           <div className="mx-auto grid max-w-[1440px] gap-[3.82vw] md:grid-cols-[0.9fr_1.1fr]">
             <div>
@@ -187,7 +187,7 @@ export default function Home() {
           </div>
         </section>
 
-        {/* THE WORK */
+        {/* THE WORK */}
         <section id="work" className="scroll-mt-8 px-[4.7vw] py-[7.64vw]">
           <div className="mx-auto max-w-[1440px]">
             <div className="flex flex-col gap-[3.82vw] md:flex-row-reverse">
@@ -252,7 +252,7 @@ export default function Home() {
           </div>
         </section>
 
-        {/* THE OPEN ENDING */
+        {/* THE OPEN ENDING */}
         <section className="bg-[#171717] px-[4.7vw] py-[clamp(5rem,10vw,9rem)] text-white">
           <div className="mx-auto max-w-[1440px]">
             <div className="w-full">
