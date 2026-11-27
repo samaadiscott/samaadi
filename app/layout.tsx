@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Bebas_Neue, Montserrat } from "next/font/google";
 import "./globals.css";
 import DiscoveryTracker from "@/components/DiscoveryTracker";
+import SitewideBanner from "@/components/SitewideBanner";
 import Script from "next/script";
 
 const montserrat = Montserrat({
@@ -43,9 +44,10 @@ export default function RootLayout({
         <noscript>
           <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WXNP655S" height="0" width="0" style={{ display: "none", visibility: "hidden" }} title="Google Tag Manager" />
         </noscript>
+        <SitewideBanner />
         {children}
         <footer className="border-t border-black/10 bg-[#F5F1EA] px-5 py-3 text-center font-sans text-[11px] font-medium tracking-[0.04em] text-black/45">
-          Made with substantial assistance from ChatGPT.
+          Made with substantial assistance from ChatGPT!
         </footer>
         <DiscoveryTracker />
       </body>
