@@ -58,6 +58,18 @@ const initiatives = [
 
 const experiences = [
   {
+    title: "Wonder Kids Books",
+    emphasis: ["Founder & CEO", "four books"],
+    detailEmphasis: ["300+ copies", "branding, outreach, and operations"],
+    eyebrow: "Youth literacy initiative · 2022–2025",
+    description:
+      "I founded and led Wonder Kids Books, a youth literacy initiative built around books by kids for kids. I authored and published four books, including a collection.",
+    detail:
+      "The books sold more than 300 copies. I also managed branding, outreach, and operations, learning what it takes to build an organization around a clear mission.",
+    link: "https://www.wonderhq.space/home",
+    linkLabel: "Explore Wonder",
+  },
+  {
     title: "Student government",
     emphasis: ["Student Council President", "student representation"],
     detailEmphasis: ["organize meetings", "more visible"],
@@ -312,7 +324,7 @@ export default function CivicPage() {
               getting involved.
             </h2>
 
-            <div className="mt-12 grid gap-10 md:grid-cols-2 md:gap-8">
+            <div className="mt-12 grid gap-10 md:grid-cols-2 md:gap-8 lg:grid-cols-3">
               {experiences.map((experience, index) => (
                 <article
                   key={experience.title}
@@ -443,7 +455,23 @@ export default function CivicPage() {
                   rel="noreferrer"
                   className={secondaryCtaOnDark}
                 >
-                  Visit my YouTube channel <span aria-hidden="true">↗</span>
+                  YouTube <span aria-hidden="true">↗</span>
+                </a>
+                <a
+                  href="https://www.tiktok.com/@samaadicivic"
+                  target="_blank"
+                  rel="noreferrer"
+                  className={secondaryCtaOnDark}
+                >
+                  TikTok <span aria-hidden="true">↗</span>
+                </a>
+                <a
+                  href="https://www.instagram.com/samaadicivic/"
+                  target="_blank"
+                  rel="noreferrer"
+                  className={secondaryCtaOnDark}
+                >
+                  Instagram <span aria-hidden="true">↗</span>
                 </a>
               </div>
             </div>
