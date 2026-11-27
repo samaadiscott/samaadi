@@ -85,7 +85,10 @@ export default function IdeasPage() {
             <aside><p className="font-sans text-xs font-bold uppercase tracking-[0.16em] text-[#164E63]">03 / Society</p></aside>
             <article className="max-w-3xl">
               <h2 className="font-display text-[clamp(2.8rem,6vw,5.5rem)] leading-[0.9]">ON WHEN BELONGING BECOMES A JUSTIFICATION.</h2>
-              <p className="mt-7 font-sans text-base leading-[1.9] text-black/75">{racismEssay}</p>
+              <details className="group mt-7 border-y border-black/15 py-5">
+                <summary className="cursor-pointer list-none font-sans text-sm font-bold underline decoration-[#CF1C25] underline-offset-4">Read the full writing <span aria-hidden="true" className="ml-2 inline-block transition-transform group-open:rotate-45">+</span></summary>
+                <p className="mt-5 max-w-3xl font-sans text-base leading-[1.9] text-black/75">{racismEssay}</p>
+              </details>
             </article>
           </div>
         </section>
