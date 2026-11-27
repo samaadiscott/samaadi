@@ -187,7 +187,7 @@ export default function ProjectsPage() {
                       Rally
                     </p>
                     <p className="font-sans text-xs text-[#6B6B6B]">
-                      Independent product project
+                      Community app
                     </p>
                   </div>
                 </div>
@@ -199,8 +199,8 @@ export default function ProjectsPage() {
                 </h2>
 
                 <p className="mt-7 max-w-xl font-sans text-lg leading-[1.7] text-[#6B6B6B]">
-                  Rally is a community app I’m designing and building
-                  independently. It’s an attempt to make digital spaces
+                  Rally is a community app I’m designing and building.
+                  It’s an attempt to make digital spaces
                   better at{" "}
                   <strong className="font-semibold text-[#171717]">
                     connecting people
