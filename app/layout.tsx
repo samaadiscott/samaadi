@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Bebas_Neue, Montserrat } from "next/font/google";
 import "./globals.css";
 import DiscoveryTracker from "@/components/DiscoveryTracker";
+import Script from "next/script";
 
 const montserrat = Montserrat({
   variable: "--font-montserrat",
