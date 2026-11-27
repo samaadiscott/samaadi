@@ -79,14 +79,14 @@ const areas = [
     title: "Okay, But What Happens When Things Go Wrong?",
     intro: "Rights matter most when protecting them is inconvenient.",
     description: <>
-      Shift corrections toward rehabilitation, strengthen due process, protect journalists and whistleblowers, end for-profit detention, and prohibit law enforcement from relying on automated predictions alone to justify action. Replace ICE in its current form with an <strong>accountable successor agency</strong> and enforceable civil-rights safeguards. Establish a carefully bounded right to self-defense, including proportionate non-lethal defensive force in public, strict limits on deadly force, voluntary state-funded de-escalation and self-defense training, and <strong>independent review</strong> of defensive-force incidents before immunity or prosecution decisions.
+      Shift corrections toward rehabilitation, strengthen due process, protect journalists and whistleblowers, end for-profit detention, and prohibit law enforcement from relying on automated predictions alone to justify action. Replace ICE in its current form with an <strong>accountable successor agency</strong>, require visible identification and body cameras during enforcement, protect sensitive locations, and strengthen safeguards against racial profiling, unjustified detention, and mass surveillance.
     </>,
   },
   {
     number: "07",
     formalTitle: "Health and Environment",
     title: "A Healthier Society Is a Public Project",
-    intro: "People should not have to choose between getting care and staying financially secure.",
+    intro: "You should not have to choose between getting care and staying financially secure.",
     description: <>
       Guarantee <strong>comprehensive healthcare</strong> without premiums or cost-sharing for essential covered care. Negotiate prescription drug prices, maintain and inflation-adjust the insulin cap, strengthen drinking-water standards, hold polluters accountable, improve food nutrition labeling, support behavioral health, and protect nursing-home residents from extractive ownership. Make healthcare costs clearer and invest in <strong>prevention and safer communities</strong>.
     </>,
@@ -129,7 +129,7 @@ const areas = [
     number: "12",
     formalTitle: "Government Effectiveness",
     title: "Government Should Actually Work",
-    intro: "A government that cannot deliver competently will struggle to earn trust.",
+    intro: "A government that cannot deliver competently will struggle to earn, and often does not deserve, trust.",
     description: <>
       Modernize government technology, publish accessible public data, reduce unnecessary administrative delays, and <strong>evaluate major programs</strong> independently. Improve public-safety response models, disclose when consultants materially influence major decisions, strengthen contractor oversight, protect research funding, and consider <strong>public alternatives</strong> when private markets consistently fail to serve the public interest.
     </>,
@@ -331,7 +331,7 @@ export default function CountervailancePage() {
                   <div className="mt-5 space-y-3 font-sans text-sm leading-[1.85] text-white/75">
                     <p>Establish an Executive Demerit system administered by the Executive Office to publicly identify serious failures in <strong>ethics and accountability</strong>, safety, transparency, or public stewardship.</p>
                     <p>A demerit would require verified misconduct, abuse of authority, gross negligence, or a serious failure of responsibility causing significant public harm or substantial erosion of public trust. An <strong>independent bipartisan panel</strong> would review the evidence and publicly explain its recommendation.</p>
-                    <p>It would be a <em>public accountability</em> measure, not a criminal or civil punishment. It could not be issued solely for political disagreement, ideology, lawful unpopular speech, or disagreement over policy. Demerits should be rare enough not to become <strong>another political weapon</strong>.</p>
+                    <p>It would be a <em>public accountability</em> measure, not a criminal or civil punishment. It could not be issued solely for political disagreement, ideology, lawful unpopular speech, or disagreement over policy. Demerits should be rare enough not to become <strong>another partisan weapon</strong>.</p>
                   </div>
                 </details>
               </article>
@@ -344,7 +344,7 @@ export default function CountervailancePage() {
                   </summary>
                   <div className="mt-5 space-y-3 font-sans text-sm leading-[1.85] text-white/80">
                     <p>Ask the same questions of every institution: who has the power, who checks it, what evidence supports its use, who can challenge the decision, and <strong>what happens when it fails</strong>?</p>
-                    <p>No corporation should dictate a market's terms without competition. No government agency should evade oversight. No technology platform should control people's information without giving them <strong>agency over it</strong>. No intelligence agency should be beyond democratic review. No political ally should receive an exemption from standards applied to an adversary.</p>
+                    <p>No corporation should dictate a market's terms without competition. No government agency should evade oversight. No technology platform should control your information without giving you <strong>meaningful agency over it</strong>. No intelligence agency should be beyond democratic review. No political ally should receive an exemption from standards applied to an adversary.</p>
                     <p>No institution should operate <strong>without accountability</strong>.</p>
                   </div>
                 </details>
