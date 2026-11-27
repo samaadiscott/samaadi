@@ -2,22 +2,24 @@ import Link from "next/link";
 import SiteNav from "@/components/SiteNav";
 
 const mainEssay = [
-  `What if part of the reason the idea of the “holy spirit” or God itself resonates is because it is a visceral description of an unknowable part of your, or man’s (as in humankind’s), self? Something which has desires that man has been in a constant battle to understand. We’ll call it the unconscious. Let’s assume much of desire is created from a lack of something, and much of desire seeks to be acknowledged. What if your more virtuous desires are a reflection of what your soul thinks the unconscious desires?`,
-  `This directly mirrors Jacques Lacan’s idea of the "other" and the "big other," where human desire is fundamentally born from an inherent sense of lack and a desperate need to be acknowledged by an external authority.`,
-  `The unconscious is ever present, and causes you to judge whether your own desires are acceptable, and if you are a virtuous person. Maybe the “holy spirit” and our scriptures are mechanisms that help fend off obsession with the desires of the unconscious, and fend off shame; as long as you’re doing the virtuous thing.`,
-  `In this sense, religion and scripture function as the ultimate "big other." The external system of language and law that humanity uses to structure the parts of the mind that are pure chaos.`,
-  `And what if there’s a primordial part of the unconscious that seeks to be all-powerful, and believes it’s right for those not virtuous to suffer, affirmed by scripture?`,
-  `So what if the unconscious is man’s portal to experience God? Religion is the only way the vast majority of man can understand the unknowable, which is why it resonates with so many. This implies there is something inherent about Islam and christianity that succeeds in showing us the unknowable that exists in our and our world’s nature.`,
-  `Others have come to similar conclusions from entirely different angles, highlighting concepts that didn't directly inspire this thought process. Carl Jung argued that religious archetypes are actually projections of a collective unconscious, viewing scriptures as necessary evolutional systems to safely integrate these overwhelming internal forces. From a harsher perspective, Friedrich Nietzsche explored how the primordial, power-seeking part of the human psyche, the "will to power," gets projected onto religion, allowing humanity to cloak its inherent aggression and desire to see others suffer in the acceptable language of divine justice and righteous wrath.`,
+  `What if part of the reason the idea of the “Holy Spirit,” or God itself, resonates is that it offers a visceral description of an unknowable part of the human self? Something within us has desires that people have struggled to understand. Let’s call it the unconscious. Suppose much of desire arises from a sense of lack, and much of it seeks acknowledgment. What if your more virtuous desires reflect what your Soul believes the unconscious desires?`,
+  `This echoes Jacques Lacan’s ideas of the “Other” and the “big Other,” in which desire is shaped by a sense of lack and by the need for recognition from an authority beyond the self.`,
+  `The unconscious is always present, shaping how you judge whether your desires are acceptable and whether you are a virtuous person. Perhaps the “Holy Spirit” and scripture help people resist becoming consumed by the desires of the unconscious, and help them navigate shame by giving them a way to pursue what they believe is virtuous.`,
+  `In this sense, religion and scripture can function as a kind of “big Other”: internal and external systems of language and law that help humanity give structure to parts of the mind that might otherwise feel chaotic.`,
+  `But what if there is also a primordial part of the unconscious that seeks to be all-powerful, and can convince people that those judged unvirtuous deserve to suffer, with scripture used to affirm that judgment?`,
+  `What if the unconscious is humanity’s portal to experiencing God? Religion may be one of the main ways people make sense of what is unknowable. Its resonance could suggest that Islam and Christianity, among other traditions, give people ways to encounter something deep in human nature and in the world around them.`,
+  `Others have approached related questions from different directions. Carl Jung interpreted religious archetypes as expressions of a collective unconscious, and saw religious symbols as ways people encounter and integrate powerful psychic forces. From a harsher perspective, Friedrich Nietzsche examined how the human will to power can be projected onto religion, allowing aggression and resentment to be recast in the language of divine justice and righteous wrath.`,
 ];
 
-const prideEssay = `Plato said wherever one is confident they may act unjustly, they will. The unconscious' constant judgement is guarding man from acting unjustly. The reason pride is considered the worst sin IS because it can make you (as in your ego or soul) believe you are greater than God, but it can make you believe you are greater than the judgements of the unconscious. Once that is true, you are free to act unjustly. The more you act unjustly, the more vulnerable your soul and eventually ego is to obsession with your unjust actions. Also, operating in society demands acting justly.`;
-const soulEssay = `I’ve been noticing more and more that your desires, actions and thoughts of your ego (conscious) will take longer to embed themselves into your soul (subconscious), but when they do will embed deep into your soul and affect the underlying part of you that the world doesn’t explicitly see, but will see.`;
+const prideEssay = <>Plato’s argument suggests that when people believe they can act unjustly without consequence, they will. Perhaps the Unconscious’s constant judgment helps restrain that impulse. The reason pride is considered the worst sin <em>IS</em> that it can lead you to believe your Ego or Soul is greater than God. It can also convince you that you are above the judgment of the Unconscious. Once that happens, you may feel free to act unjustly. The more often you act unjustly, the more vulnerable your Soul, and eventually your Ego, may become to obsession with those actions. Beyond those inner consequences, living in society requires us to act justly.</>;
+const soulEssay = `I’ve been noticing that the desires, actions, and thoughts of your Ego (the conscious self) may take longer to become embedded in your Soul (the subconscious self). But when they do, they can settle deeply, shaping the part of you the world cannot directly see, even if it eventually sees the effects.`;
+const racismEssay = `Racism is not always experienced by the person practicing it as hatred of another race. Sometimes it is framed as love or loyalty toward one’s own. That framing can make racism harder to recognize: harmful treatment gets excused as protection, pride, or solidarity. But when loyalty to one’s group becomes indifference to the harm it causes, it can justify exclusion, concentrate power, and protect the systems built on that harm. Racism must be confronted not only in open hostility, but also in the supposedly positive language used to excuse it. Once those systems gain power, they work to preserve and expand it.`;
 const notes = [
   "I have unrecognized greatness within me, so i'll give it to the world.",
   "I don't want it to be my responsibility to think, i want it to be my freedom to think.",
   "Winning through conquer is less admirable than winning without. we must be so formidable we could deter enemies without killing. killing is a degree of losing.",
   "The most interesting thing to me is the science of building a better world.",
+  "In worldly matters, others may be loyal to an ideology. My loyalty is to effectiveness.",
 ];
 
 export default function IdeasPage() {
@@ -77,8 +79,18 @@ export default function IdeasPage() {
           </div>
         </section>
 
+        <section className="bg-[#DCE5E7] px-[6vw] py-[10vh]">
+          <div className="mx-auto grid max-w-[1440px] gap-8 md:grid-cols-[0.35fr_1fr]">
+            <aside><p className="font-sans text-xs font-bold uppercase tracking-[0.16em] text-[#164E63]">03 / Society</p></aside>
+            <article className="max-w-3xl">
+              <h2 className="font-display text-[clamp(2.8rem,6vw,5.5rem)] leading-[0.9]">WHEN BELONGING<br />BECOMES A JUSTIFICATION.</h2>
+              <p className="mt-7 font-sans text-base leading-[1.9] text-black/75">{racismEssay}</p>
+            </article>
+          </div>
+        </section>
+
         <section className="mx-auto max-w-[1440px] px-[6vw] py-[10vh]">
-          <div className="mb-12 flex flex-wrap items-end justify-between gap-5"><div><p className="mb-4 font-sans text-xs font-bold uppercase tracking-[0.16em] text-[#CF1C25]">03 / Fragments</p><h2 className="font-display text-[clamp(3rem,6vw,5.5rem)] leading-[0.9]">THOUGHTS IN PASSING.</h2></div><p className="max-w-sm font-sans text-sm leading-relaxed text-black/65">Not every idea arrives as a fully formed essay. Some are just thoughts I wanted to keep before they wandered off.</p></div>
+          <div className="mb-12 flex flex-wrap items-end justify-between gap-5"><div><p className="mb-4 font-sans text-xs font-bold uppercase tracking-[0.16em] text-[#CF1C25]">04 / Fragments</p><h2 className="font-display text-[clamp(3rem,6vw,5.5rem)] leading-[0.9]">THOUGHTS IN PASSING.</h2></div><p className="max-w-sm font-sans text-sm leading-relaxed text-black/65">Not every idea arrives as a fully formed essay. Some are just thoughts I wanted to keep before they wandered off.</p></div>
           <div className="grid gap-0 border-t border-black/20 md:grid-cols-2">
             {notes.map((note, index) => <blockquote key={index} className="border-b border-black/20 py-8 md:px-8 md:first:pl-0 md:nth-[2]:border-l md:nth-[2]:border-l-black/20 md:nth-[2]:pr-0"><span className="mb-5 block font-sans text-xs font-bold text-[#CF1C25]">0{index + 1}</span><p className="max-w-xl font-display text-[clamp(1.7rem,3vw,2.7rem)] leading-[1.12]">“{note}”</p></blockquote>)}
           </div>
