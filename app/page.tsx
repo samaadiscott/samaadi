@@ -168,6 +168,48 @@ export default function Home() {
                 </div>
               </div>
             </div>
+
+            {/* PROOF OF IMPACT */}
+            <div className="mt-16 border-t border-white/15 pt-8">
+              <div className="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
+                <div>
+                  <p className="font-sans text-xs font-bold uppercase tracking-[0.16em] text-[#E05A60]">Proof of impact</p>
+                  <h3 className="mt-3 font-display text-[clamp(2.5rem,5vw,4.5rem)] leading-[0.9]">Some work. Some receipts.</h3>
+                </div>
+                <a href="/civic" className="inline-flex items-center gap-2 border-b border-white/35 pb-1 font-sans text-sm font-bold text-white transition-colors hover:border-[#E05A60] hover:text-[#E05A60]">
+                  See the evidence <span aria-hidden="true">↗</span>
+                </a>
+              </div>
+              <div className="mt-8 grid gap-7 sm:grid-cols-2 lg:grid-cols-4">
+                <article className="border-l-2 border-[#E05A60] pl-4">
+                  <p className="font-display text-5xl tabular-nums">300+</p>
+                  <p className="mt-2 font-sans text-sm leading-6 text-white/70">copies sold through Wonder Kids Books</p>
+                  <a href="https://www.wonderhq.space/home" target="_blank" rel="noreferrer" className="mt-3 inline-block font-sans text-xs font-semibold text-white/55 underline underline-offset-4 hover:text-white">Book project ↗</a>
+                </article>
+                <article className="border-l-2 border-[#E05A60] pl-4">
+                  <p className="font-display text-5xl tabular-nums">49</p>
+                  <p className="mt-2 font-sans text-sm leading-6 text-white/70">student-council communications posts at Bates in 2024–25</p>
+                  <a href="https://www.instagram.com/forabetterbates/" target="_blank" rel="noreferrer" className="mt-3 inline-block font-sans text-xs font-semibold text-white/55 underline underline-offset-4 hover:text-white">@forabetterbates ↗</a>
+                </article>
+                <article className="border-l-2 border-[#E05A60] pl-4">
+                  <p className="font-display text-5xl tabular-nums">100k+</p>
+                  <p className="mt-2 font-sans text-sm leading-6 text-white/70">cross-platform views in three months, based on creator analytics</p>
+                  <div className="mt-3 flex flex-wrap gap-x-3 gap-y-1 font-sans text-xs font-semibold text-white/55">
+                    <a href="https://www.youtube.com/@samaadicivic" target="_blank" rel="noreferrer" className="underline underline-offset-4 hover:text-white">YouTube</a>
+                    <a href="https://www.tiktok.com/@samaadicivic" target="_blank" rel="noreferrer" className="underline underline-offset-4 hover:text-white">TikTok</a>
+                    <a href="https://www.instagram.com/samaadicivic/" target="_blank" rel="noreferrer" className="underline underline-offset-4 hover:text-white">Instagram</a>
+                  </div>
+                </article>
+                <article className="border-l-2 border-[#E05A60] pl-4">
+                  <p className="font-display text-5xl tabular-nums">711</p>
+                  <p className="mt-2 font-sans text-sm leading-6 text-white/70">students enrolled at Wiley H. Bates Middle in 2024–25</p>
+                  <a href="https://files-backend.assets.thrillshare.com/documents/asset/uploaded_file/4458/Aacps/29641b8b-d0cc-4879-b85f-44cda1edf1bc/Official_FARMS_Statistics_SY_2024-2025.pdf?disposition=inline" target="_blank" rel="noreferrer" className="mt-3 inline-block font-sans text-xs font-semibold text-white/55 underline underline-offset-4 hover:text-white">AACPS enrollment data ↗</a>
+                </article>
+              </div>
+              <p className="mt-7 max-w-3xl font-sans text-xs leading-6 text-white/45">
+                These figures describe different things: sales are an outcome, posts are output, views are reported reach, and enrollment is school size rather than a count of people directly reached.
+              </p>
+            </div>
           </div>
         </section>
 

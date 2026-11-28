@@ -267,7 +267,18 @@ export default function DiscoveryTracker() {
               <button onClick={() => setOpen(false)} aria-label="Close progress panel" className="text-white/60 hover:text-white">✕</button>
             </div>
             <div className="mt-4 h-1.5 overflow-hidden bg-white/15">
-              <div className="h-full bg-[#CF1C25] transition-all" style={{ width: `${(visitedCount / destinations.length) * 100}%` }} />
+              <div
+                className="h-full transition-all"
+                style={{
+                  width: `${(visitedCount / destinations.length) * 100}%`,
+                  backgroundColor:
+                    pathname === "/projects"
+                      ? "#FF6B35"
+                      : pathname === "/ideas/countervailance"
+                        ? "#F2C94C"
+                        : "#CF1C25",
+                }}
+              />
             </div>
             <p className="mt-2 text-xs text-white/55">{visitedCount} of {destinations.length} destinations explored</p>
             <div className="mt-5 border-t border-white/15 pt-4">
