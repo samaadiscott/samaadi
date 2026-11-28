@@ -367,24 +367,10 @@ export default function CivicPage() {
             <div className="grid gap-8 md:grid-cols-[0.8fr_1.2fr] md:items-end md:gap-16">
               <h2 className="font-display text-[clamp(3.5rem,7vw,6.5rem)] leading-[0.86]">Reach, work,<br />results.</h2>
               <p className="max-w-2xl font-sans text-base leading-7 text-black/60">
-                Titles tell you where I served. These numbers add context: what I produced, what reached an audience, and the scale of the school communities involved.
+                Titles tell you where I served. These numbers add context: what I produced and what reached an audience.
               </p>
             </div>
             <div className="mt-12 grid gap-x-8 gap-y-10 sm:grid-cols-2 lg:grid-cols-3">
-              <article className="border-t border-black/15 pt-5">
-                <p className="font-display text-5xl tabular-nums text-[#164E63]">711</p>
-                <h3 className="mt-3 font-sans text-base font-bold">Wiley H. Bates Middle students</h3>
-                <p className="mt-2 font-sans text-sm leading-6 text-black/60">Official school enrollment for 2024–25, during my Student Council presidency.</p>
-                <a href="https://files-backend.assets.thrillshare.com/documents/asset/uploaded_file/4458/Aacps/29641b8b-d0cc-4879-b85f-44cda1edf1bc/Official_FARMS_Statistics_SY_2024-2025.pdf?disposition=inline" target="_blank" rel="noreferrer" className="mt-4 inline-flex font-sans text-xs font-bold text-[#164E63] underline underline-offset-4 hover:text-[#A9161E]">AACPS enrollment data ↗</a>
-                <p className="mt-2 font-sans text-xs leading-5 text-black/40">School size, not a count of students directly reached.</p>
-              </article>
-              <article className="border-t border-black/15 pt-5">
-                <p className="font-display text-5xl tabular-nums text-[#164E63]">2,085</p>
-                <h3 className="mt-3 font-sans text-base font-bold">Annapolis High students</h3>
-                <p className="mt-2 font-sans text-sm leading-6 text-black/60">Official school enrollment for 2024–25, during my news-anchor work at Annapolis High.</p>
-                <a href="https://files-backend.assets.thrillshare.com/documents/asset/uploaded_file/4458/Aacps/29641b8b-d0cc-4879-b85f-44cda1edf1bc/Official_FARMS_Statistics_SY_2024-2025.pdf?disposition=inline" target="_blank" rel="noreferrer" className="mt-4 inline-flex font-sans text-xs font-bold text-[#164E63] underline underline-offset-4 hover:text-[#A9161E]">AACPS enrollment data ↗</a>
-                <p className="mt-2 font-sans text-xs leading-5 text-black/40">School size, not a count of viewers.</p>
-              </article>
               <article className="border-t border-black/15 pt-5">
                 <p className="font-display text-5xl tabular-nums text-[#164E63]">49</p>
                 <h3 className="mt-3 font-sans text-base font-bold">Student-council communications posts</h3>
@@ -409,7 +395,7 @@ export default function CivicPage() {
               </article>
             </div>
             <p className="mt-10 border-t border-black/10 pt-5 font-sans text-xs leading-6 text-black/45">
-              Context matters: enrollment measures the size of a school, not the audience for a broadcast. Posts measure output, views measure reported reach, and book sales are a direct result. I do not treat those as interchangeable.
+              Context matters: posts measure output, views measure reported reach, and book sales are a direct result. I do not treat those as interchangeable.
             </p>
           </div>
         </section>
